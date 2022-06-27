@@ -1,0 +1,136 @@
+page{
+    background: #eee;
+  }
+.userInfoView{
+    background: #FFC300;
+    padding: 30rpx 0 40rpx;
+    text-align: center;
+    overflow: hidden;
+}
+
+.userInfoView > view:nth-child(1){
+    width: 200rpx;
+    height: 200rpx;
+    margin: 40rpx auto;
+    border-radius: 100rpx;
+    background: #fff;
+    text-align: center;
+}
+
+.userInfoView image{
+    width: 160rpx;
+    height: 160rpx;
+    border-radius: 80rpx;
+    margin-top: 20rpx;
+}
+
+
+.userInfoView > view:nth-child(2){
+    color:#fff;
+    font-size: 40rpx;
+    padding: 30rpx 0;
+    font-weight: bold;
+}
+
+.userInfoView > view:nth-child(3){
+    color:#fff;
+    font-size: 40rpx;
+    padding: 30rpx 0;
+    font-weight: bold;
+}
+
+/* 用户列表选项样式 */
+.userItemListView{
+    position: relative;
+    background: #fff;
+    padding: 0 50rpx;
+    margin: 24rpx0;
+}
+
+.userItemListView > navigator{
+    height: 88rpx;
+    line-height: 88rpx;
+    border-bottom: 1rpx solid #eee;
+    position: relative;
+}
+
+.userItemListView > navigator:last-child{
+    border: none;
+}
+
+.arrow{
+  width: 16rpx;
+  height: 16rpx;
+  border-top: 4rpx solid #999;
+  border-right: 4rpx solid #999;
+  transform: rotate(45deg);
+  position: absolute;
+  right: 30rpx;
+  top: 38rpx;
+}
+
+/* 在线客服样式 */
+.listView{
+    height: 88rpx;
+    background: #fff;
+    margin: 24rpx 0;
+    padding: 0 30rpx;
+    line-height: 88rpx;
+    position: relative;
+  }
+  
+  .listView > text{
+    font-size: 26rpx;
+    font-weight: bold;
+    vertical-align: middle;
+    margin-left: 25rpx;
+  }
+  .feedback{
+      position: absolute;
+      top: 330rpx;
+      background-color: transparent;
+  }
+
+
+  /* 去除button默认样式 */
+button {
+    position:absolute;
+    top: 100rpx;
+    left: 0;
+    height: 88rpx;
+    width: 100vw !important;
+    background-color: transparent;
+}
+
+@font-face {
+    font-family: 'iconfont';  /* project id 3439453 */
+    src: url('');
+    src: url('?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_3439453_0d357o6ohxa.woff2') format('woff2'),
+    url('//at.alicdn.com/t/font_3439453_0d357o6ohxa.woff') format('woff'),
+    url('//at.alicdn.com/t/font_3439453_0d357o6ohxa.ttf') format('truetype'),
+    url('#iconfont') format('svg');
+  }
+  .iconfont{
+    font-family: 'iconfont';
+    font-size:24px;
+    position: absolute;
+    left: -13rpx;
+  }
+
+  .icon-fankui::before{
+    content: '\e662';
+  }
+  
+  .icon-kefu::before{
+    content: '\e62b';
+  }  
+  .icon-loginout::before{
+    content: '\e61d';
+  }  
+  .icon-ai::before{
+    content: '\eb62';
+  }
+  .icon-guanyu::before{
+    content: '\e613';
+  }

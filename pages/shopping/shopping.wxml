@@ -1,0 +1,63 @@
+<view class="searchOuterView">
+  <view class="searchInnerView">
+    <image src="{{baseUrl}}search.jpg"></image>
+    <text>搜索</text>
+  </view>
+</view>
+
+<!-- 小导航 -->
+<view class="navView">
+    <view>
+        <text>水果</text>
+    </view>
+    <view>
+        <text>蔬菜</text>
+    </view>
+    <view>
+        <text>肉蛋</text>
+    </view>
+</view>
+
+<!-- 轮播图 -->
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <!-- block 类似 vue中的template  -->
+  <block wx:for="{{background}}" wx:key="*this">
+    <swiper-item>
+      <!-- 放置图片 -->
+      <image src="{{baseUrl+item}}"></image>
+    </swiper-item>
+  </block>
+</swiper>
+
+<!-- 推荐商品 -->
+<view class="shopView">
+    <!-- 商品名称 -->
+    <view class="shopTitleView">
+        爆款促销
+    </view>
+    <!-- 商品列表 -->
+    <view class="shopListView">
+        <!-- 其中一项 -->
+        <view class="shopItemView"  wx:for="{{shop}}" bindtap="showDialog">
+            <image src="{{baseUrl+item.imgUrl}}"></image>
+            <view>
+              <image class="shopItemImg"  src="{{baseUrl+item.hotUrl}}"></image>
+              <text>{{item.title}}</text><text class="colorStyle">{{item.price}}</text>/斤
+            </view>
+        </view>
+        <dialog id='dialog'
+              title='提示'
+              content='确定购买吗？'
+              cancelBtn='取消'
+              successBtn='确定'
+              bind:error="cancel" 
+              bind:success="success">
+            </dialog>
+    </view>
+      <!-- 查看更多 -->
+  <view class="moreView">
+    <text>查看更多</text>
+    <view class="arrow"></view>
+  </view>
+</view>

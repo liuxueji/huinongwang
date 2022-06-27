@@ -1,0 +1,58 @@
+/* component/dialog.wxss */
+.dialog {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+  }
+  .dialog-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    
+    width: 80%;
+    max-width: 580rpx;
+    border: 2rpx solid #FFC300;
+    border-radius: 8rpx;
+    box-sizing: bordre-box;
+    transform: translate(-50%, -50%); 
+    overflow: hidden;
+    background: #fff;
+  }
+  .dialog-title {
+    width: 100%;
+    padding: 20rpx;
+    text-align: center;
+    font-size: 45rpx;
+    font-weight: bold;
+    background-color: #FFC300;
+  }
+  .dialog-con {
+    margin: 60rpx 10rpx;
+    font-size: 40rpx;
+    text-align: center;
+  }
+  .dialog-btn {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40rpx;
+  }
+  .dialog-btn text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 88rpx;
+    border-radius: 60rpx;
+  }
+
+  .successBtn{
+    background-color: #FFC300;
+  }
+  .cancelBtn{
+    color:#FFC300 ;
+    border:1px solid #FFC300;
+  }
+  

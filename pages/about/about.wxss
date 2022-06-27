@@ -1,0 +1,14 @@
+.myInfo{
+    padding:0 60rpx;
+}
+
+.myInfoItem{
+    padding-bottom: 60rpx;
+}
+
+.myInfoItem > view:nth-child(1){
+    font-size: 50rpx;
+    font-weight: bold;
+    color: #FFC300;
+    padding-bottom: 20rpx;
+}

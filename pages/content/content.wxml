@@ -1,0 +1,20 @@
+<!-- 引入富文本解析器 -->
+<import src="../../wxParse/wxParse.wxml"/> 
+<view class="contentTitle">
+    {{contents.title}}
+</view>
+<view class="contentAddTime">
+    {{contents.addTime}}
+</view>
+<view class="contentZhaiyao">
+    摘要：{{contents.zhaiyao}}
+</view>
+<view>
+      <image src="{{baseUrl+contents.imgUrl}}"></image>
+</view>
+<view >
+    <template is="wxParse" data="{{wxParseData:content.nodes}}" />
+</view>
+
+<!-- 置顶 -->
+<image wx:if="{{visual}}" src="/images/top.png" class="top" bindtap="scrollToTop" />

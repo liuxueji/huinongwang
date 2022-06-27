@@ -1,0 +1,44 @@
+<!-- 用户信息展示区域 -->
+<view class="userInfoView">
+    <view>
+        <image src="{{baseUrl+userInfo.imgUrl}}"></image>
+    </view>
+    <view>昵称：{{userInfo.nickName}}</view>
+    <view>手机号：{{userInfo.phone}}</view>
+    
+</view>
+
+<!-- 用户列表选项 -->
+<view class="userItemListView">
+    <!-- 客服 -->
+    <navigator url="/pages/AI/AI" open-type="navigate" class="listView">
+        <icon class="iconfont icon-ai"></icon>
+        <text>智能客服</text>
+        <view class="arrow"></view>
+    </navigator>
+    <!--打开会话聊天功能，只能用按钮的开放来触发-->
+    <navigator class="listView">
+        <icon class="iconfont icon-kefu"></icon>
+        <text>在线客服</text>
+        <view class="arrow"></view>
+    </navigator>
+    <button open-type="contact"></button>
+    <!-- 介绍 -->
+    <navigator url="/pages/about/about" open-type="navigate" class="listView">
+        <icon class="iconfont icon-guanyu"></icon>
+        <text>关于我们</text>
+        <view class="arrow"></view>
+    </navigator>
+    <navigator class="listView">
+        <icon class="iconfont icon-fankui"></icon>
+        <text>意见反馈</text>
+        <view class="arrow"></view>
+    </navigator>
+    <button class="feedback" open-type="feedback"></button>
+    <navigator bindtap="loginout" class="listView">
+        <icon class="iconfont icon-loginout"></icon>
+        <text>退出登录</text>
+        <view class="arrow"></view>
+    </navigator>
+
+</view>

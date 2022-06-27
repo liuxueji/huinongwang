@@ -1,0 +1,9 @@
+
+
+<!-- 作者信息 -->
+<view class="myInfo">
+    <view class="myInfoItem">
+        <view>张三</view>
+        <view>来自广东</view>
+    </view>
+</view>

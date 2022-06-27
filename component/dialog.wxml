@@ -1,0 +1,10 @@
+<view class="dialog" wx:if="{{flag}}">
+  <view class='dialog-container'>
+    <view class="dialog-title">{{title}}</view>
+    <view class="dialog-con">{{content}}</view>
+    <view class="dialog-btn">
+      <text class="successBtn" bindtap='success'>{{successBtn}}</text>
+      <text class="cancelBtn" bindtap='cancel'>{{cancelBtn}}</text>
+    </view>
+  </view>
+</view>

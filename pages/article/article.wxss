@@ -1,0 +1,77 @@
+/* 推荐文章 */
+.allArticleView{
+  padding: 0 30rpx;
+  background-color: #fff;
+  margin-bottom: 24rpx;
+}
+
+
+.articleView{
+  display: flex;
+  padding: 30rpx 0;
+  border-bottom: 1rpx solid #eee;
+}
+
+.articleView image{
+  width: 120rpx;
+  height: 120rpx;
+  margin-right: 20rpx;
+  margin-top: 30rpx;
+}
+
+.articleTitle{
+  font-size: 28rpx;
+  font-weight: bold;
+  line-height: 50rpx;
+}
+
+.articleDesc{
+  font-size: 26rpx;
+  color: #aaa;
+  line-height: 35rpx;
+}
+
+  /* 正在加载 */
+.loadingView{
+    text-align: center;
+    height: 88rpx;
+    background: #fff;
+    line-height: 88rpx;
+}
+.loadingView > image{
+    width: 48rpx;
+    height: 48rpx;
+    vertical-align: middle;
+}
+
+.loadingView > text{
+    font-size: 28rpx;
+    vertical-align: middle;
+}
+
+.moreView{
+  height: 88rpx;
+  line-height: 88rpx;
+  font-size: 28rpx;
+  color: #aaa;
+  position: relative;
+}
+
+.arrow{
+  width: 16rpx;
+  height: 16rpx;
+  border-top: 4rpx solid #999;
+  border-right: 4rpx solid #999;
+  transform: rotate(45deg);
+  position: absolute;
+  right: 30rpx;
+  top: 38rpx;
+}
+
+.top{
+  position: fixed;
+  bottom: 70px;
+  right: 12px;
+  width: 40px;
+  height: 40px;
+}

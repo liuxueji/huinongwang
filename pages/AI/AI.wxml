@@ -1,0 +1,36 @@
+<view class='box' >
+    <block wx:for="{{syas}}"  wx:for-item="item" wx:key='{{syas}}' >
+        <view class='con'>
+            <view class='mySay'>
+                <view class='rightText'>
+                    <text>{{item.mySay}}</text>
+                </view>
+                <view class='rightInfo'>
+                    <view style="position: absolute; left: 635rpx; top: -64rpx">{{userInfo.nickName}}</view>
+                    <image src='{{baseUrl+userInfo.imgUrl}}'></image>
+                </view>
+            </view>
+            <view class='heSay'>
+                <view class='leftInfo'>
+                    <image wx:if="{{personMsg}}" src='{{baseUrl}}title1.jpg'></image>
+                    <image wx:else src='{{kefu}}'></image>
+                </view>
+                <view class='leftText'>
+                    <view wx:if="{{personMsg}}">{{personMsg.name}}</view>
+                    <view wx:else>小白</view>
+                    <text>{{item.heSay}}</text>
+                </view>
+            </view>
+        </view>
+    </block>
+</view>
+
+<view class='send' style="width: 100vw; height: 178rpx; display: block; box-sizing: border-box; left: 0rpx; top: 1026rpx; position: fixed">
+    <view class='input'  style="position: fixed; left: -12rpx; top: 1044rpx">
+        <form bindsubmit='subInfo'>
+            <input type='text' class='text' placeholder='请输入...' name='says' style="width: 512rpx; height: 100rpx; display: block; box-sizing: border-box"></input>
+            <button class='sendBtn' form-type='submit' style="position: relative; left: 22rpx; top: 0rpx; width: 174rpx; height: 70rpx; display: block; box-sizing: border-box">发送</button>
+        </form>
+        <button class='clearBtn' bindtap='clearInfo'  style="position: relative; left: 22rpx; top: 8rpx; width: 174rpx; height: 70rpx; display: block; box-sizing: border-box">清空</button>
+    </view>
+</view>

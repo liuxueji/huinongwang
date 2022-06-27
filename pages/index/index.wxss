@@ -1,0 +1,106 @@
+page{
+  background: #eee;
+}
+
+.searchInnerView > image{
+  width:36rpx;
+  height: 36rpx;
+  vertical-align: middle;
+}
+
+.searchInnerView > text{
+  font-size: 24rpx;
+  color: #aaa;
+  vertical-align: middle;
+}
+
+swiper{
+  height: 400rpx;
+}
+
+swiper  image{
+  width:750rpx;
+  height: 400rpx;
+}
+
+.navView{
+  display: flex;
+  flex-wrap: wrap;
+  height: 464rpx;
+  align-content: space-around;
+}
+
+.navItemView{
+  width: 150rpx;
+  text-align: center;
+  margin: 0 50rpx;
+}
+
+.navItemView > image{
+  width: 150rpx;
+  height: 150rpx;
+}
+
+
+
+/* 推荐文章 */
+.allArticleView{
+  padding: 0 30rpx;
+  background-color: #fff;
+  margin-bottom: 24rpx;
+}
+
+.articleTitleView{
+  height: 80rpx;
+  font-size: 30rpx;
+  font-weight: bold;
+  border-bottom: 1rpx solid #eee;
+  line-height: 88rpx;
+}
+
+.articleView{
+  display: flex;
+  padding: 30rpx 0;
+  border-bottom: 1rpx solid #eee;
+}
+
+.articleView image{
+  width: 120rpx;
+  height: 120rpx;
+  margin-right: 20rpx;
+}
+
+.articleTitle{
+  font-size: 28rpx;
+  font-weight: bold;
+  line-height: 50rpx;
+}
+
+.articleDesc{
+  font-size: 26rpx;
+  color: #aaa;
+  line-height: 35rpx;
+  height: 70rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  align-content: center;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient:vertical;
+}
+
+.moreView{
+  height: 88rpx;
+  line-height: 88rpx;
+  font-size: 28rpx;
+  color: #aaa;
+  position: relative;
+}
+
+.top{
+  position: fixed;
+  bottom: 70px;
+  right: 12px;
+  width: 40px;
+  height: 40px;
+}

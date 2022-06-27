@@ -1,0 +1,47 @@
+<!-- 心理师详细信息 -->
+<view class="personMsg">
+    <view>
+        <image src="{{baseUrl}}title1.jpg"></image>
+    </view>
+    <view>{{personMsg.name}}</view>
+    <view>擅长领域：{{personMsg.field}}</view>
+    <view class="showView">
+        <view>V</view>
+    </view>
+</view>
+
+
+<!-- 收费标准 -->
+<view class="ratesView">
+    <!-- 标题 -->
+    <view class="titleView">
+        收费标准
+    </view>
+    <!-- 收费项 -->
+    <navigator bindtap="call" class="ratesItemView">
+        <view>语音咨询</view>
+        <view>553人已咨询</view>
+        <view>
+            <text>50</text>/次(小时)
+        </view>
+    </navigator>
+    
+    <!-- 收费项 -->
+    <navigator bindtap="call" class="ratesItemView">
+        <view >视频咨询</view>
+        <view>134人已咨询</view>
+        <view>
+            <text>80</text>/次(小时)
+        </view>
+    </navigator>
+
+    <!-- 查看更多 -->
+    <view class="moreView">
+        <text>查看更多</text>
+        <view class="arrow"></view>
+    </view>
+</view>
+<!-- 发起咨询 -->
+<view class="bottomView">
+    <navigator url='../AI/AI?id={{personMsg._id}}' >免费咨询</navigator>
+</view>

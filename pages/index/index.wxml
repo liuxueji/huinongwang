@@ -1,0 +1,54 @@
+<!-- 轮播图 -->
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <!-- block 类似 vue中的template  -->
+  <block wx:for="{{background}}" wx:key="*this">
+    <swiper-item>
+      <navigator open-type="navigate" url="">
+        <!-- 放置图片 -->
+        <image src="{{item}}"></image>
+      </navigator>
+    </swiper-item>
+  </block>
+</swiper>
+
+<!-- 导航菜单 -->
+<view class="navView">
+  <navigator url="/pages/content/content?id={{item.id}}" open-type="navigate" class="navItemView" wx:for="{{menus}}" wx:key="*this">
+    <image src="{{baseUrl+item.navImg}}"></image>
+    <text>{{item.navText}}</text>
+  </navigator>
+</view>
+
+
+<!-- 推荐内容 -->
+<view class="allArticleView">
+  <!-- 标题 -->
+  <view class="articleTitleView">
+    热门文章
+  </view>
+  <!-- 内容1 -->
+  <navigator url="/pages/content/content?id={{item._id}}" open-type="navigate" class="articleView" wx:for="{{articles}}" wx:key="*this">
+    <view>
+      <image src="{{baseUrl + item.imgUrl}}"></image>
+    </view>
+    <view class="articleContent">
+      <view class="articleTitle">
+        {{item.title}}
+      </view>
+      <view class="articleDesc">
+        {{item.zhaiyao}}
+      </view>
+    </view>
+  </navigator>
+
+
+  <!-- 实现组件跳转，将view换成navigator，添加url地址-->
+  <navigator class="moreView" url="/pages/article/article" open-type="navigate">
+    <text>查看更多</text>
+    <view class="arrow"></view>
+  </navigator>
+
+  <!-- 置顶 -->
+  <image wx:if="{{visual}}" src="/images/top.png" class="top" bindtap="scrollToTop" />
+</view>

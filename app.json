@@ -1,0 +1,48 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/answers/answers",
+    "pages/shopping/shopping",
+    "pages/my/my",
+    "pages/article/article",
+    "pages/about/about",
+    "pages/personMsg/personMsg",
+    "pages/login/login",
+    "pages/register/register",
+    "pages/content/content",
+    "pages/AI/AI"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#FFC300",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#ccc",
+    "selectedColor":"#FFC300",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "主页",
+      "iconPath": "/images/home.png",
+      "selectedIconPath": "/images/home_select.png"
+    },{
+      "pagePath": "pages/answers/answers",
+      "text": "问答",
+      "iconPath": "/images/answer.png",
+      "selectedIconPath": "/images/answer_select.png"
+    },{
+      "pagePath": "pages/shopping/shopping",
+      "text": "采购",
+      "iconPath": "/images/shopping.png",
+      "selectedIconPath": "/images/shopping_select.png"
+    },{
+      "pagePath": "pages/my/my",
+      "text": "我的",
+      "iconPath": "/images/my.png",
+      "selectedIconPath": "/images/my_select.png"
+    }]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {},
+  "enablePullDownRefresh":true,
+  "onReachBottomDistance":50,
+  "navigationBarTitleText": "文章列表"
+}

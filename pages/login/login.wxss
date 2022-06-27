@@ -1,0 +1,75 @@
+page{
+    background: #eee;
+}
+
+/* 输入框样式 */
+.inputView{
+    background: #fff;
+    padding: 0 30rpx;
+    border-radius: 15rpx;
+}
+
+.inputView > input{
+    height: 88rpx;
+    padding-left: 50rpx;
+}
+
+.inputView > input:nth-child(1){
+    border-bottom: 1rpx solid #eee;
+}
+/* 按钮区域 */
+.buttonView{
+    width: 690rpx;
+    margin: 80rpx auto 0;
+}
+
+.buttonView > button{
+    width: 680rpx;
+    height: 88rpx;
+    font-size: 36rpx;
+}
+
+.buttonView > button:nth-child(1){
+    background-color: #FFC300;
+}
+
+.buttonView > button:nth-child(2){
+    margin-top: 50rpx;
+    color: #FFC300;
+}
+
+.buttonView > view{
+    font-size: 28rpx;
+    color: #FFC300;
+    text-align: right;
+}
+
+
+@font-face {
+    font-family: 'iconfont';  /* project id 3439453 */
+    src: url('');
+    src: url('?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_3439453_0d357o6ohxa.woff2') format('woff2'),
+    url('//at.alicdn.com/t/font_3439453_0d357o6ohxa.woff') format('woff'),
+    url('//at.alicdn.com/t/font_3439453_0d357o6ohxa.ttf') format('truetype'),
+    url('#iconfont') format('svg');
+  }
+
+  .iconfont{
+    font-family: 'iconfont';
+    font-size:48rpx;
+    position: relative;
+  }
+
+  .icon-user::before{
+    content: '\e604';
+    position: absolute;
+    top: 25rpx;
+    left: -10rpx;
+  }
+  .icon-pwd::before{
+    content: '\e8b2';
+    position: absolute;
+    top: 25rpx;
+    left: -10rpx;
+  }

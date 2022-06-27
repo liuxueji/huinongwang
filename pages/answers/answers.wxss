@@ -1,0 +1,57 @@
+
+/* 列表 */
+.consultListView{
+    padding: 0 10rpx;
+}
+
+.consultView{
+    padding: 10px 0;
+    border-bottom: 1rpx solid #eee;
+    display: flex;
+}
+
+.consultView image{
+    width: 180rpx;
+    height: 180rpx;
+    margin-right: 50rpx;
+    margin-left: 30rpx;
+    margin-top: 20rpx;
+}
+
+.consultInfoView > view:nth-child(1){
+    margin-bottom: 5rpx;
+    font-size: 44rpx;
+    font-weight: bold;
+    line-height: 50rpx;
+}
+
+.consultInfoView > view:nth-child(2){
+    font-size: 35rpx;
+    color: rgb(128, 126, 126);
+    font-weight: bold;
+    line-height: 50rpx;
+}
+
+.consultInfoView > view:nth-child(3){
+    font-size: 24rpx;
+    color: #ccc;
+    line-height: 40rpx;
+}
+
+/* 正在加载 */
+.loadingView{
+    text-align: center;
+    height: 88rpx;
+    background: #fff;
+    line-height: 88rpx;
+}
+.loadingView > image{
+    width: 48rpx;
+    height: 48rpx;
+    vertical-align: middle;
+}
+
+.loadingView > text{
+    font-size: 28rpx;
+    vertical-align: middle;
+}

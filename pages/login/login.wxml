@@ -1,0 +1,19 @@
+<!-- 定义form组件 -->
+<form bindsubmit="login">
+    <!-- 输入框 -->
+    <view class="inputView">
+        <!-- 文本框 -->
+        <icon class="iconfont icon-user"></icon>
+        <input type="text" placeholder="用户名" name="username" value="{{userInfo.userName}}"></input>
+        <!-- 密码框 -->
+        <icon class="iconfont icon-pwd"></icon>
+        <input type="password" placeholder="密码" name="userpwd" value="{{userInfo.userPwd}}"></input>
+    </view>
+    
+    <!-- 按钮区域 -->
+    <view class="buttonView">
+        <button form-type="submit" type="primary">登录</button>
+        <button bindtap="gotoReg" type="default">注册</button>
+        <view>忘记密码</view>
+    </view>
+</form>

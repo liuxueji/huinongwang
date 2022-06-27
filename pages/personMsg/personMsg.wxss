@@ -1,0 +1,137 @@
+page{
+    background: #eee;
+  }
+.personMsg{
+    background: #FFC300;
+    overflow: hidden;
+    color: white;
+}
+
+.personMsg > view:nth-child(1){
+    width: 200rpx;
+    height: 200rpx;
+    margin: 40rpx auto;
+    border-radius: 100rpx;
+    background: #fff;
+    text-align: center;
+}
+
+.personMsg image{
+    width: 160rpx;
+    height: 160rpx;
+    border-radius: 80rpx;
+    margin-top: 20rpx;
+}
+
+.personMsg > view:nth-child(2){
+    font-size: 50rpx;
+    text-align: center;
+    font-weight: bold;
+}
+
+.personMsg > view:nth-child(3){
+    font-size: 40rpx;
+    text-align: center;
+    padding:28rpx 0;
+    border-bottom: 2rpx solid #fff;
+    width: 690rpx;
+    margin: 40rpx auto;
+}
+
+.showView{
+    padding:20rpx 76rpx;
+    position: relative;
+    
+}
+
+.showView > view{
+    position:absolute;
+    top: -360rpx;
+    right: 260rpx;
+    width: 60rpx;
+    height: 60rpx;
+    background: red;
+    text-align: center;
+    line-height: 60rpx;
+    border-radius: 40rpx;
+    color: gold;
+    font-weight:900;
+}
+
+
+/* 收费标准 */
+.ratesView{
+    margin: 24rpx 0;
+    padding: 0 30rpx;
+    background: #fff;
+}
+.titleView{
+    padding: 30rpx 0;
+    font-size: 30rpx;
+    font-weight: bold;
+    border-bottom: 1rpx solid #eee;
+}
+.ratesItemView{
+    padding: 20rpx 0;
+    position: relative;
+    color: #aaa;
+}
+.ratesItemView > view:nth-child(1){
+    font-size: 30rpx;
+}
+.ratesItemView > view:nth-child(2){
+    font-size: 24rpx;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+.ratesItemView > view:nth-child(3){
+    font-size: 30rpx;
+}
+.ratesItemView > view:nth-child(3) text{
+    font-size: 30rpx;
+    color: red;
+    font-weight: bold;
+    padding-top: 20rpx;
+}
+
+/* 查看更多 */
+.moreView{
+    height: 88rpx;
+    line-height: 88rpx;
+    font-size: 28rpx;
+    color: #aaa;
+    position: relative;
+  }
+.arrow{
+    width: 16rpx;
+    height: 16rpx;
+    border-top: 4rpx solid #999;
+    border-right: 4rpx solid #999;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 30rpx;
+    top: 38rpx;
+  }
+
+  /* 发起咨询 */
+.bottomView{
+    display: flex;
+    text-align: center;
+}
+
+.bottomView > navigator{
+    flex-grow: 1;
+    height: 98rpx;
+    font-size: 36rpx;
+    line-height: 98rpx;
+}
+
+
+.bottomView > navigator{
+    background: #FFC300;
+    color: #fff;
+    margin-top: 10rpx;
+    font-weight: bold;
+    border-radius: 30rpx;
+}

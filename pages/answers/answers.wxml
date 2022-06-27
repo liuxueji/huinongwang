@@ -1,0 +1,21 @@
+
+<!-- 咨询师列表 -->
+<view class="consultListView">
+    <!-- 小农信息 -->
+    <view class="consultView" wx:for="{{personMsg}}">
+        <view>
+            <image src="{{baseUrl}}title1.jpg"></image>
+        </view>
+        <navigator url="/pages/personMsg/personMsg?id={{item._id}}" class="consultInfoView">
+            <view>{{item.name}}</view>
+            <view>{{item.field}}</view>
+            <view>{{item.message}}</view>
+        </navigator>
+    </view>
+</view>
+
+<!-- 正在加载 -->
+<view class="loadingView">
+    <image src="/images/load.png"></image>
+    <text>正在加载更多资源</text>
+</view>

@@ -1,0 +1,31 @@
+<!-- 推荐内容 -->
+<view class="allArticleView">
+  <!-- 内容 -->
+  <navigator url="/pages/content/content?id={{item._id}}" open-type="navigate" class="articleView" wx:for="{{articles}}" wx:key="*this">
+    <view>
+      <image src="{{baseUrl+item.imgUrl}}"></image>
+    </view>
+    <view class="articleContent">
+      <view class="articleTitle">
+        {{item.title}}
+      </view>
+      <view class="articleDesc">
+        {{item.zhaiyao}}
+      </view>
+    </view>
+  </navigator> 
+</view>
+
+<!-- 正在加载 -->
+<view class="loadingView" wx:if="{{isShow}}">
+    <image src="/images/load.png"></image>
+    <text>正在加载更多资源...</text>
+</view>
+
+<!-- 加载更多 -->
+<view class="loadingView" wx:if="{{isData}}">
+    <text>没有更多了</text>
+</view>
+
+<!-- 回到顶部 -->
+<image wx:if="{{visual}}" src="/images/top.png" class="top" bindtap="scrollToTop" />

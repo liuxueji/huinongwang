@@ -1,0 +1,162 @@
+
+.send{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 20vh;
+    line-height: 300rpx;
+    background-color:#ffffff;
+    text-align: center;
+    box-shadow: 20rpx -8rpx 50rpx #ccc
+}
+
+.input{
+    position: fixed;
+    width: 100%;
+    bottom: 60rpx;
+    margin-left: 10rpx;
+}
+
+.text{
+    float: left;
+    margin-left: 20rpx;
+    margin-bottom: 30rpx;
+    width: 95%;
+    height: 66rpx;
+    border-radius:60rpx;
+    font-size: 30rpx;
+    background-color: rgb(239, 243, 243);
+    text-align: center;
+    color: #505050
+}
+
+.sendBtn{
+    float:left;
+    height: 62rpx;
+    background-color: #FFC300;
+    line-height: 40rpx;
+    font-size: 30rpx;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius:60rpx;
+}
+
+.clearBtn{
+    float:left;
+    margin-left: 16rpx;
+    height: 62rpx;
+    background-color: #ccc;
+    line-height: 40rpx;
+    color: #fff;
+    cursor: pointer;
+    border-radius:36rpx;
+    font-size: 30rpx
+}
+
+.say{
+    float: right;
+    margin-right: 60rpx;
+    width: 60rpx;
+    height: 60rpx;
+    font-size: 32rpx;
+    font-weight: bold;
+    line-height: 60rpx;
+    cursor: pointer;
+    border-radius:14rpx;
+}
+
+.box{
+    margin-top: 5vh;
+    width: 98%;
+    line-height: 64rpx;
+    margin-bottom: 26vh
+}
+
+.heSay{
+    width: 65%;
+    margin-top: 0rpx
+}
+
+.heSay image{
+    margin-bottom: -120rpx;
+    width: 60rpx;
+    height: 60rpx;
+    border-radius: 14rpx;
+}
+
+.heSay text{
+    margin-left: 8rpx;
+    border-radius: 20rpx;
+    font-size: 28rpx;
+    color:  #000;
+    margin-bottom: -64rpx;
+}
+
+.mySay{
+    margin-top: 10rpx;
+}
+
+.mySay image{
+    float: right;
+    margin-right: -86vw;
+    width: 60rpx;
+    height: 60rpx;
+    border-radius: 15rpx;
+    background: darkblue 
+}
+
+.mySay text{
+    margin-right: 10rpx;
+    float: right;
+    border-radius: 16rpx;
+    font-size: 28rpx;
+    color: #000;
+}
+
+.con{
+    margin-top: 1%;
+    margin-left: 1%;
+    width: 98%;
+}
+
+.leftInfo{
+    width: 60rpx; 
+}
+
+
+.leftText{  
+    position: relative;
+    margin-top: 30rpx;
+    margin-left: 70rpx;
+    padding-left: 10rpx;
+    border-radius: 10rpx;
+    background-color: #FFC300;
+}
+
+.leftText view{
+    position:absolute;
+    left: -65rpx;
+    top: -50rpx;
+    font-size: 25rpx;
+}
+
+.rightInfo{
+    margin-right: 10rpx;
+    position: relative;
+    width: 60rpx;
+}
+.rightInfo view{
+    position:absolute;
+    left: 650rpx;
+    top: -50rpx;
+    font-size: 25rpx;
+    white-space:nowrap;
+}
+
+.rightText{
+    float: right;
+    margin-right: 82rpx;
+    border-radius: 3rpx;
+    padding-left: 10rpx;
+    background-color: #FFC300;
+}

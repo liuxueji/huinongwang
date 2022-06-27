@@ -1,0 +1,39 @@
+/* 引入富文本解析器 */
+@import "../../wxParse/wxParse.wxss";
+
+page{
+    margin: 0 80rpx;
+    width: 600rpx;
+}
+ 
+.contentTitle{
+    height: 88rpx;
+    line-height: 88rpx;
+    font-size: 30rpx;
+    font-weight: bold;
+}
+ 
+.contentAddTime{
+    font-size: 26rpx;
+    color: #A8A8A8;
+    line-height: 36rpx;
+}
+
+.contentZhaiyao{
+    font-size: 28rpx;
+    color: #bbb;
+    line-height: 36rpx;
+}
+ 
+.contentImg{
+    text-align: center;
+    margin: 20rpx 0;
+}
+
+.top{
+    position: fixed;
+    bottom: 70px;
+    right: 12px;
+    width: 40px;
+    height: 40px;
+  }

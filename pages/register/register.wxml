@@ -1,0 +1,20 @@
+<!-- 定义form组件 -->
+<form bindsubmit="register">
+    <!-- 输入框 -->
+    <view class="inputView">
+        <input type="text" placeholder="请输入用户名" name="username"/>
+        <!-- 密码框 -->
+        <input type="text" placeholder="请输入密码" name="pwd1"/>
+        <input type="text" placeholder="确认密码" name="pwd2"/>
+        <input type="text" placeholder="昵称" name="nickname"/>
+        <input type="text" placeholder="真实姓名" name="name"/>
+        <input type="number" placeholder="手机号" name="phone"/>
+        
+    </view>
+    
+    <!-- 按钮区域 -->
+    <view class="buttonView">
+        <button form-type="submit">注册</button>
+        <navigator url="/pages/login/login" open-type="navigate" hover-class="none">已有账号？登录</navigator>
+    </view>
+</form>

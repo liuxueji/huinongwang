@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "dialog": "/component/dialog"
+  },
+  "navigationBarTitleText": "采购中心"
+  
+}
